@@ -1,9 +1,10 @@
 import sys
 
-commands = [s.rstrip("\n") for s in sys.stdin.readlines()][1:]
 stack = []
 result = []
-for command in commands:
+next(sys.stdin)
+for s in sys.stdin:
+    command = s.rstrip("\n")
     if command[0] == "1":
         stack.append(command[2:])
     elif command[0] == "2":
