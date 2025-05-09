@@ -1,0 +1,1 @@
+print((set('ABCDEFGHIJKLMNOPQRSTUVWXYZ') - set(input().upper())).pop())
